@@ -17,6 +17,12 @@
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (weak, nonatomic) IBOutlet UILabel *textLabel;
+@property (weak, nonatomic) IBOutlet UILabel *detailTextLabel;
+@property (weak, nonatomic) IBOutlet UISwitch *doneSwitch;
+
+
+
 
 -(void)detailChangedObject;
 

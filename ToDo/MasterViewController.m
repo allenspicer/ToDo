@@ -15,6 +15,8 @@
 
 @implementation MasterViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -23,6 +25,13 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    
+//    self.textLabel = 
+//    
+//    cell.textLabel.text = [object valueForKey:@"title"];
+//    cell.detailTextLabel.text = [[object valueForKey:@"timestamp"] description];
+    
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -111,6 +120,7 @@
 }
 
 - (void)configureCell:(UITableViewCell *)cell withObject:(NSManagedObject *)object {
+    //item defined in header(connected to storyboard) = 
     cell.textLabel.text = [object valueForKey:@"title"];
     cell.detailTextLabel.text = [[object valueForKey:@"timestamp"] description];
 }
