@@ -42,11 +42,18 @@
         
     // If appropriate, configure the new managed object.
     // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
-
+    
+    
+     //  NSString * dateString = self.detailTextField.text;
+       // NSString *nowString = @"%@",[NSDate date];
+        NSDateFormatter * formatter = [[NSDateFormatter alloc]init];
+        [formatter setDateFormat:@"yyyyMMdd"];
+    NSString * newDate = [formatter stringFromDate:[NSDate date]];
     
     [newManagedObject setValue:@"Temporary Title" forKey:@"title"];
-    [newManagedObject setValue:[NSDate date] forKey:@"timestamp"];
+    [newManagedObject setValue:newDate forKey:@"timestamp"];
     [newManagedObject setValue:@NO forKey:@"done"];
+    
     
     // Save the context.
     NSError *error = nil;
