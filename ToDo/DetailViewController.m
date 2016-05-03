@@ -59,8 +59,8 @@ self.detailTextField.text = [self.detailItem valueForKey:@"title"];
 //    NSDate * newDate = [formatter dateFromString:dateString];
  
     [self.detailItem setValue:self.detailTextField.text forKey:@"title"];
-    self.saveButton.enabled = NO;
-    self.cancelButton.enabled = NO;
+   // self.saveButton.enabled = NO;
+  //  self.cancelButton.enabled = NO;
     
     [self.masterVC detailChangedObject];
     
