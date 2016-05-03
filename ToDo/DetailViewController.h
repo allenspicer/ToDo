@@ -11,7 +11,7 @@
 
 @interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) NSManagedObject * detailItem;
+@property (strong, nonatomic) id detailItem;
 
 @property(weak, nonatomic) MasterViewController * masterVC;
 
