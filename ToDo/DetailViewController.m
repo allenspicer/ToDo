@@ -30,7 +30,8 @@
     // Update the user interface for the detail item.
     if (self.detailItem) {
         self.detailTextField.text = [self.detailItem valueForKey:@"title"];
-        
+        self.dateLabel.text = @"Hello";//[self.detailItem valueForKey:@"timestamp"];
+
     }
 }
 
@@ -49,6 +50,7 @@
 
 //just perform action that configure view does - reload from saved version
 self.detailTextField.text = [self.detailItem valueForKey:@"title"];
+    
 }
 
 -(IBAction)saveButtonTapped:(UIButton*)sender{

@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *detailTextField;
 @property (weak, nonatomic) IBOutlet UIButton *cancelButton;
 @property (weak, nonatomic) IBOutlet UIButton *saveButton;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+
 
 @end
 

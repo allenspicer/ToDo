@@ -65,22 +65,38 @@
                                     <action selector="cancelButtonTapped:" destination="JEX-9P-axG" eventType="touchUpInside" id="mDx-o4-8qB"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="2" translatesAutoresizingMaskIntoConstraints="NO" id="iT3-Nt-zLF">
+                                <rect key="frame" x="0.0" y="424" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="QMd-Fa-bxf" firstAttribute="leading" secondItem="ppb-f2-nyT" secondAttribute="leading" id="D6H-rh-BRd"/>
                             <constraint firstItem="9SO-zi-s3t" firstAttribute="trailing" secondItem="ppb-f2-nyT" secondAttribute="trailing" id="Fiq-05-EHJ"/>
+                            <constraint firstItem="iT3-Nt-zLF" firstAttribute="width" secondItem="ppb-f2-nyT" secondAttribute="width" id="GAN-i2-Cfo"/>
+                            <constraint firstItem="iT3-Nt-zLF" firstAttribute="top" secondItem="ppb-f2-nyT" secondAttribute="bottom" constant="77" id="OH3-AJ-FVl"/>
+                            <constraint firstItem="iT3-Nt-zLF" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="PyT-BM-9Qc"/>
+                            <constraint firstItem="iT3-Nt-zLF" firstAttribute="width" secondItem="svH-Pt-448" secondAttribute="width" id="T6l-Rj-ybl"/>
                             <constraint firstItem="ppb-f2-nyT" firstAttribute="width" secondItem="svH-Pt-448" secondAttribute="width" multiplier="0.5" id="Xbd-pt-PDT"/>
                             <constraint firstItem="QMd-Fa-bxf" firstAttribute="top" secondItem="ppb-f2-nyT" secondAttribute="bottom" constant="8" id="bug-MU-Dy8"/>
                             <constraint firstItem="ppb-f2-nyT" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="orL-HL-dYg"/>
                             <constraint firstItem="9SO-zi-s3t" firstAttribute="top" secondItem="ppb-f2-nyT" secondAttribute="bottom" constant="8" id="tga-h2-u5V"/>
                             <constraint firstItem="ppb-f2-nyT" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="253" id="ztl-N8-dx5"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GAN-i2-Cfo"/>
+                            </mask>
+                        </variation>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
                     <connections>
                         <outlet property="cancelButton" destination="QMd-Fa-bxf" id="P6y-Td-88D"/>
+                        <outlet property="dateLabel" destination="iT3-Nt-zLF" id="ryX-tv-PGF"/>
                         <outlet property="detailTextField" destination="ppb-f2-nyT" id="P4a-Q8-aM3"/>
                         <outlet property="saveButton" destination="9SO-zi-s3t" id="Rje-PQ-z5r"/>
                     </connections>
