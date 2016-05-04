@@ -30,7 +30,7 @@
     // Update the user interface for the detail item.
     if (self.detailItem) {
         self.detailTextField.text = [self.detailItem valueForKey:@"title"];
-        self.dateLabel.text = @"Hello";//[self.detailItem valueForKey:@"timestamp"];
+        self.dateLabel.text = @"To Do Item";//[self.detailItem valueForKey:@"timestamp"];
 
     }
 }
